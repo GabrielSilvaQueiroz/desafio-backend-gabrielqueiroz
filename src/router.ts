@@ -1,8 +1,8 @@
 import { Router } from "express";
 import packageJson from './../package.json'
-import { getNota } from "./Controllers/getNota";
-import { createNota } from "./Controllers/createNota";
-import { deleteNota } from "./Controllers/deleteNota";
+import { getNota } from "./Controllers/notaController";
+import { createNota } from "./Controllers/notaController";
+import { deleteNota } from "./Controllers/notaController";
 import express, { json } from "express";
 
 const router = Router();
