@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": [
+      "es5",
+      "es6",
+      "ES2018"
+    ],
+    "module": "commonjs",
+    "rootDir": "./src", // Diretório de Desenvolvimento
+    "outDir": "./build", //Diretório de Saída
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+  }
+}

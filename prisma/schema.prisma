@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+//Criando tabela resultado
+model Resultado {
+  id           String     @id @default(uuid())
+  bimestre     Bimestre
+  disciplina   Disciplina
+  criadoEm     DateTime   @default(now())
+  atualizadoEm DateTime   @updatedAt
+  nota         Float
+
+  @@unique([bimestre, disciplina]) // maneira de garantir que a combinação de valores entre bimestre e disciplina seja única na tabela, evitando duplicatas.
+  @@map("resultado")
+}
+
+enum Disciplina {
+  BIOLOGIA
+  ARTES
+  GEOGRAFIA
+  SOCIOLOGIA
+}
+
+enum Bimestre {
+  PRIMEIRO
+  SEGUNDO
+  TERCEIRO
+  QUARTO
+}
