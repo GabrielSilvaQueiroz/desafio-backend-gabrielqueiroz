@@ -1,7 +1,7 @@
 {
   "name": "desafio-backend-gabrielqueiroz",
   "version": "1.0.0",
-  "description": "Desafio da Back-end utilizando TypeScript com Node.js para vaga de Desenvolvedor Júnior FullStack",
+  "description": "Desafio da Back-end utilizando TypeScript com Node.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
